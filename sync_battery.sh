@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CHARGE=$(cat /sys/class/power_supply/BAT0/capacity)
 AC_STAT=$(cat /sys/class/power_supply/BAT0/status | grep -c Charging)
 
